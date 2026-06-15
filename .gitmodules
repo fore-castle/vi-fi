@@ -1,0 +1,3 @@
+[submodule "Vi-Fi"]
+	path = Vi-Fi
+	url = https://github.com/vifi2021/Vi-Fi.git

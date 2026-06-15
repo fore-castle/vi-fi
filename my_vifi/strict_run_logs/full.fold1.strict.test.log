@@ -1,0 +1,94 @@
+
+
+===== RUN =====
+D:\python\conda\envs\dlgpu\python.exe inference.py --fold 1 --ablation full --val_ratio 0.1 --val_seed 2026 --checkpoint D:\buaa_study\research\vi-fi\my_vifi\checkpoints_strict\full\fold1_best_epoch1_acc0.5937.pth
+
+Device: cuda
+Ablation: full
+Validation split used for normalization: ratio=0.1, seed=2026
+Loading checkpoint: D:\buaa_study\research\vi-fi\my_vifi\checkpoints_strict\full\fold1_best_epoch1_acc0.5937.pth
+Computing feature normalization statistics...
+Found 82 sequences (15 indoor, 67 outdoor)
+WARNING: configured test sequences not found: ['20210907_145202']
+Validation sequences (8): ['20201223_140951', '20201228_164427', '20201229_155701', '20211004_145341', '20211004_152828', '20211006_144439', '20211006_145531', '20211006_153008']
+Using 70 sequences for train (fold 1)
+  Loading sequence 1/70...
+  Loading sequence 11/70...
+  Loading sequence 21/70...
+  Loading sequence 31/70...
+  Loading sequence 41/70...
+  Loading sequence 51/70...
+  Loading sequence 61/70...
+Total samples: 109632
+  Sampling 2031 windows from 109632 total...
+  Camera mean: [629.9398    411.52264     5.5549874]
+  Camera std:  [306.5588    121.71995     2.0781972]
+  Phone mean:  [ 5.0159219e+03  5.0869455e+02 -6.2061274e-01  2.8045444e+00
+  9.0492592e+00 -6.0320820e-04  2.3006435e-02  5.2532215e-02
+ -4.3211386e-01 -1.5706474e+01 -4.5503578e+01]
+  Phone std:   [3.0605007e+03 4.0651724e+02 1.7531084e+00 2.5337276e+00 2.6653860e+00
+ 5.1210928e-01 4.7996682e-01 7.4948359e-01 2.9065914e+01 2.6853004e+01
+ 2.1885490e+01]
+Found 82 sequences (15 indoor, 67 outdoor)
+WARNING: configured test sequences not found: ['20210907_145202']
+Validation sequences (8): ['20201223_140951', '20201228_164427', '20201229_155701', '20211004_145341', '20211004_152828', '20211006_144439', '20211006_145531', '20211006_153008']
+Using 4 sequences for test (fold 1)
+  Loading sequence 1/4...
+Total samples: 7141
+Test samples: 7141
+Running inference...
+
+=== Results (Fold 1) ===
+Online accuracy (no voting):   63.23%
+Offline accuracy (30-frame vote): 71.28%
+
+=== Paper Reference ===
+Vi-Fi online:  ~81%
+Vi-Fi offline: ~90%
+
+
+===== RUN =====
+D:\python\conda\envs\dlgpu\python.exe inference.py --fold 1 --ablation full --val_ratio 0.1 --val_seed 2026 --checkpoint D:\buaa_study\research\vi-fi\my_vifi\checkpoints_strict\full\fold1_best_epoch29_acc0.8552.pth
+
+Device: cuda
+Ablation: full
+Validation split used for normalization: ratio=0.1, seed=2026
+Loading checkpoint: D:\buaa_study\research\vi-fi\my_vifi\checkpoints_strict\full\fold1_best_epoch29_acc0.8552.pth
+Computing feature normalization statistics...
+Found 82 sequences (15 indoor, 67 outdoor)
+WARNING: configured test sequences not found: ['20210907_145202']
+Validation sequences (8): ['20201223_140951', '20201228_164427', '20201229_155701', '20211004_145341', '20211004_152828', '20211006_144439', '20211006_145531', '20211006_153008']
+Using 70 sequences for train (fold 1)
+  Loading sequence 1/70...
+  Loading sequence 11/70...
+  Loading sequence 21/70...
+  Loading sequence 31/70...
+  Loading sequence 41/70...
+  Loading sequence 51/70...
+  Loading sequence 61/70...
+Total samples: 109632
+  Sampling 2031 windows from 109632 total...
+  Camera mean: [629.9398    411.52264     5.5549874]
+  Camera std:  [306.5588    121.71995     2.0781972]
+  Phone mean:  [ 5.0159219e+03  5.0869455e+02 -6.2061274e-01  2.8045444e+00
+  9.0492592e+00 -6.0320820e-04  2.3006435e-02  5.2532215e-02
+ -4.3211386e-01 -1.5706474e+01 -4.5503578e+01]
+  Phone std:   [3.0605007e+03 4.0651724e+02 1.7531084e+00 2.5337276e+00 2.6653860e+00
+ 5.1210928e-01 4.7996682e-01 7.4948359e-01 2.9065914e+01 2.6853004e+01
+ 2.1885490e+01]
+Found 82 sequences (15 indoor, 67 outdoor)
+WARNING: configured test sequences not found: ['20210907_145202']
+Validation sequences (8): ['20201223_140951', '20201228_164427', '20201229_155701', '20211004_145341', '20211004_152828', '20211006_144439', '20211006_145531', '20211006_153008']
+Using 4 sequences for test (fold 1)
+  Loading sequence 1/4...
+Total samples: 7141
+Test samples: 7141
+Running inference...
+
+=== Results (Fold 1) ===
+Online accuracy (no voting):   85.26%
+Offline accuracy (30-frame vote): 92.54%
+
+=== Paper Reference ===
+Vi-Fi online:  ~81%
+Vi-Fi offline: ~90%
