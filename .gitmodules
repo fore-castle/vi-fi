@@ -1,3 +1,6 @@
 [submodule "Vi-Fi"]
 	path = Vi-Fi
 	url = https://github.com/vifi2021/Vi-Fi.git
+[submodule "vitag"]
+	path = vitag
+	url = https://github.com/bryanbocao/vitag.git
